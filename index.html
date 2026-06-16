@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VoxWave — Tu Voz. Control Total.</title>
-<meta name="description" content="VoxWave controla tu Android por completo con comandos de voz naturales. Potenciado por Gemini AI. AutoPilot, VoiceFlow y AirControl.">
+<title>AirVox — Tu Voz. Control Total.</title>
+<meta name="description" content="AirVox controla tu Android por completo con comandos de voz naturales. Potenciado por Gemini AI. AutoPilot, VoiceFlow y AirControl.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -184,7 +184,7 @@ section{position:relative;padding:110px 24px}
 /* ============ 4. CYBERNETIC BENTO GRID ============ */
 .bento-grid{
   display:grid;grid-template-columns:repeat(4,1fr);
-  grid-auto-rows:minmax(150px,auto);gap:14px;margin-top:56px;
+  grid-auto-rows:minmax(150px,auto);grid-auto-flow:dense;gap:14px;margin-top:56px;
 }
 @media (max-width:900px){.bento-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:560px){.bento-grid{grid-template-columns:1fr}}
@@ -302,7 +302,7 @@ footer .links a:hover{color:#fff}
 
 <!-- ============ HERO: PONG PIXEL TEXT ============ -->
 <header class="hero" id="inicio">
-  <canvas id="pongCanvas" aria-label="VOXWAVE — animación interactiva estilo Pong con texto pixelado"></canvas>
+  <canvas id="pongCanvas" aria-label="AIRVOX — animación interactiva estilo Pong con texto pixelado"></canvas>
   <div class="hero-foot">
     <span class="eyebrow">Automatización por voz para Android · Gemini AI</span>
     <div class="hero-cta">
@@ -318,13 +318,13 @@ footer .links a:hover{color:#fff}
     <div class="sec-head reveal">
       <span class="eyebrow">Arquitectura de inteligencia</span>
       <h2>Tres modos.<br>Una sola voz.</h2>
-      <p>VoxWave interpreta lo que dices y lo convierte en acciones reales dentro de tu teléfono — llamadas, mensajes, alarmas y apps, sin tocar la pantalla.</p>
+      <p>AirVox interpreta lo que dices y lo convierte en acciones reales dentro de tu teléfono — llamadas, mensajes, alarmas y apps, sin tocar la pantalla.</p>
     </div>
     <div class="modes-grid">
       <article class="mode-card reveal">
         <span class="tag">MODO 01</span>
         <h3>AutoPilot</h3>
-        <p>Ejecución autónoma de tareas programadas. Define un objetivo una vez — VoxWave lo ejecuta a la hora exacta, navegando apps y completando acciones sin que toques nada.</p>
+        <p>Ejecución autónoma de tareas programadas. Define un objetivo una vez — AirVox lo ejecuta a la hora exacta, navegando apps y completando acciones sin que toques nada.</p>
         <ul>
           <li>Programación de tareas por horario</li>
           <li>Encadenamiento de acciones multi-paso</li>
@@ -334,7 +334,7 @@ footer .links a:hover{color:#fff}
       <article class="mode-card reveal">
         <span class="tag">MODO 02</span>
         <h3>VoiceFlow</h3>
-        <p>Motor de automatización por voz en tiempo real. Di cualquier comando en lenguaje natural — VoxWave interpreta la intención con Gemini y ejecuta la secuencia exacta de UI.</p>
+        <p>Motor de automatización por voz en tiempo real. Di cualquier comando en lenguaje natural — AirVox interpreta la intención con Gemini y ejecuta la secuencia exacta de UI.</p>
         <ul>
           <li>Palabra clave: «vox» / «hey vox»</li>
           <li>Escucha activa continua <span class="pro-chip">PRO</span></li>
@@ -366,7 +366,7 @@ footer .links a:hover{color:#fff}
       <div class="how-step reveal">
         <span class="num">01 / ENTRADA</span>
         <h3>Habla tu comando</h3>
-        <p>Sin sintaxis rígida. Di «vox» para despertar a VoxWave y habla en lenguaje natural — sin botones, sin tocar, sin desbloquear la pantalla.</p>
+        <p>Sin sintaxis rígida. Di «vox» para despertar a AirVox y habla en lenguaje natural — sin botones, sin tocar, sin desbloquear la pantalla.</p>
       </div>
       <div class="how-step reveal">
         <span class="num">02 / PROCESAMIENTO</span>
@@ -375,7 +375,7 @@ footer .links a:hover{color:#fff}
       </div>
       <div class="how-step reveal">
         <span class="num">03 / EJECUCIÓN</span>
-        <h3>VoxWave ejecuta</h3>
+        <h3>AirVox ejecuta</h3>
         <p>La intención se enruta al ejecutor correcto de Android — llamadas, WhatsApp, alarmas, gestos de scroll o ajustes del sistema, con precisión nativa.</p>
       </div>
     </div>
@@ -390,7 +390,7 @@ footer .links a:hover{color:#fff}
     <div class="scroll-sticky">
       <div class="scroll-header" id="scrollHeader">
         <span class="eyebrow">En acción</span>
-        <h2>Tu voz. Control total.<span>VoxWave</span></h2>
+        <h2>Tu voz. Control total.<span>AirVox</span></h2>
       </div>
       <div class="scroll-card" id="scrollCard">
         <div class="scroll-card-inner">
@@ -411,7 +411,7 @@ footer .links a:hover{color:#fff}
     <div class="bento-grid">
       <div class="bento-item col-2 row-2 reveal">
         <h3><span class="bicon"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.2a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 8.5-8.5 8.38 8.38 0 0 1 8.5 8Z"/></svg></span>WhatsApp manos libres</h3>
-        <p>Envía mensajes, responde hilos, abre el contacto n.º que digas y navega estados — todo sin tocar el teléfono. La función estrella de VoxWave, con burbuja de confirmación antes de enviar.</p>
+        <p>Envía mensajes, responde hilos, abre el contacto n.º que digas y navega estados — todo sin tocar el teléfono. La función estrella de AirVox, con burbuja de confirmación antes de enviar.</p>
         <div class="bento-visual" aria-hidden="true">
           <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
         </div>
@@ -431,15 +431,15 @@ footer .links a:hover{color:#fff}
       </div>
       <div class="bento-item col-2 reveal">
         <h3><span class="bicon"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></span>Gestos de scroll por voz</h3>
-        <p>Desliza en las cuatro direcciones con un comando — VoxWave despacha gestos táctiles reales mediante el Servicio de Accesibilidad.</p>
-      </div>
-      <div class="bento-item reveal">
-        <h3><span class="bicon"><svg viewBox="0 0 24 24"><path d="M11 5 6 9H2v6h4l5 4V5ZM22 9l-6 6M16 9l6 6"/></svg></span>Modo silencio</h3>
-        <p>Activa No Molestar y cambia perfiles de sonido con una sola frase.</p>
+        <p>Desliza en las cuatro direcciones con un comando — AirVox despacha gestos táctiles reales mediante el Servicio de Accesibilidad.</p>
       </div>
       <div class="bento-item reveal">
         <h3><span class="bicon"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z"/><circle cx="12" cy="13" r="4"/></svg></span>Captura de pantalla</h3>
         <p>Toma y guarda screenshots con un solo comando de voz.</p>
+      </div>
+      <div class="bento-item reveal">
+        <h3><span class="bicon"><svg viewBox="0 0 24 24"><path d="M11 5 6 9H2v6h4l5 4V5ZM22 9l-6 6M16 9l6 6"/></svg></span>Modo silencio</h3>
+        <p>Activa No Molestar y cambia perfiles de sonido con una sola frase.</p>
       </div>
     </div>
   </div>
@@ -451,7 +451,7 @@ footer .links a:hover{color:#fff}
     <div class="sec-head reveal">
       <span class="eyebrow">Freemium</span>
       <h2>Hazte Pro.<br>Desbloquea todo.</h2>
-      <p>VoxWave es gratis. Pro elimina límites de sesión, activa la escucha continua y quita los anuncios.</p>
+      <p>AirVox es gratis. Pro elimina límites de sesión, activa la escucha continua y quita los anuncios.</p>
     </div>
     <div class="pricing-grid">
       <div class="price-card reveal">
@@ -482,7 +482,7 @@ footer .links a:hover{color:#fff}
 
 <!-- ============ FOOTER ============ -->
 <footer>
-  <div class="logo">VOX<span>WAVE</span></div>
+  <div class="logo">AIR<span>VOX</span></div>
   <p>Control por voz y gestos — Hecho con Flutter · San Luis Potosí, México</p>
   <div class="links">
     <a href="#">Privacidad</a>
@@ -490,7 +490,7 @@ footer .links a:hover{color:#fff}
     <a href="https://github.com/ginoarez" target="_blank" rel="noopener">GitHub</a>
     <a href="#">Contacto</a>
   </div>
-  <p style="margin-top:20px;font-size:12px">© 2026 VoxWave. Potenciado por Gemini API. Todos los derechos reservados.</p>
+  <p style="margin-top:20px;font-size:12px">© 2026 AirVox. Potenciado por Gemini API. Todos los derechos reservados.</p>
 </footer>
 
 <script>
@@ -517,7 +517,7 @@ window.addEventListener('scroll',()=>{
 },{passive:true});
 
 /* ===================================================================
-   3. ANIMATED HERO — Pong con texto pixelado "VOXWAVE"
+   3. ANIMATED HERO — Pong con texto pixelado "AIRVOX"
 =================================================================== */
 (function(){
   const canvas = document.getElementById('pongCanvas');
@@ -530,6 +530,7 @@ window.addEventListener('scroll',()=>{
     A:[[0,1,1,0],[1,0,0,1],[1,1,1,1],[1,0,0,1],[1,0,0,1]],
     C:[[1,1,1,1],[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,1,1,1]],
     E:[[1,1,1,1],[1,0,0,0],[1,1,1,1],[1,0,0,0],[1,1,1,1]],
+    I:[[1,1,1],[0,1,0],[0,1,0],[0,1,0],[1,1,1]],
     L:[[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,1,1,1]],
     N:[[1,0,0,0,1],[1,1,0,0,1],[1,0,1,0,1],[1,0,0,1,1],[1,0,0,0,1]],
     O:[[1,1,1,1],[1,0,0,1],[1,0,0,1],[1,0,0,1],[1,1,1,1]],
@@ -558,7 +559,7 @@ window.addEventListener('scroll',()=>{
     const scale = Math.min(canvas.width/1000, canvas.height/1000);
     const LARGE = 8*scale, SMALL = 4*scale, SPEED = 6*scale;
     pixels=[];
-    const words = ["VOXWAVE","TU VOZ ES EL CONTROL"];
+    const words = ["AIRVOX","TU VOZ ES EL CONTROL"];
 
     const wLarge = calcWordWidth(words[0], LARGE);
     const wSmall = words[1].split(" ").reduce((w,sub,i)=> w + calcWordWidth(sub,SMALL) + (i>0?WORD_SPACING*SMALL:0),0);
